@@ -13,7 +13,7 @@ class Categories(models.Model):
 
 
 class Themes(models.Model):
-    category_id = models.OneToOneField(Categories, on_delete= models.CASCADE)
+    category_id = models.ManyToManyField(Categories)
     name = models.CharField(max_length=150)
     desc = models.TextField(max_length=350)
 
@@ -22,7 +22,7 @@ class Themes(models.Model):
 
 
 class Details(models.Model):
-    theme_id = models.OneToOneField( Themes, on_delete= models.CASCADE, primary_key=True)
+    theme_id = models.ManyToManyField( Themes)
     detail = models.TextField(verbose_name='Описания темы (текст)')
 
     class Meta:
