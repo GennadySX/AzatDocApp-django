@@ -2,14 +2,16 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="27435ed6-6149-475e-8bab-0970ad35c06f" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/dataSources.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/api/urls.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/DocApp/settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/DocApp/settings.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/DocApp/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/DocApp/urls.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/api/admin.py" beforeDir="false" afterPath="$PROJECT_DIR$/api/admin.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/api/migrations/0001_initial.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/api/migrations/__init__.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/api/migrations/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/api/serializers.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/api/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/api/models.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/db.sqlite3" beforeDir="false" afterPath="$PROJECT_DIR$/db.sqlite3" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/api/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/api/views.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/db.sqlite3" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -27,8 +29,23 @@
     <option name="HIDDEN_KINDS">
       <set />
     </option>
-    <expand />
+    <expand>
+      <path>
+        <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
+        <item name="db" type="feb32156:DbDataSourceImpl" />
+      </path>
+    </expand>
     <select />
+  </component>
+  <component name="DjangoConsoleOptions" custom-start-script="import sys; print('Python %s on %s' % (sys.version, sys.platform))&#10;import django; print('Django %s' % django.get_version())&#10;sys.path.extend([WORKING_DIR_AND_PYTHON_PATHS])&#10;if 'setup' in dir(django): django.setup()&#10;import django_manage_shell; django_manage_shell.run(PROJECT_ROOT)">
+    <option name="myCustomStartScript" value="import sys; print('Python %s on %s' % (sys.version, sys.platform))&#10;import django; print('Django %s' % django.get_version())&#10;sys.path.extend([WORKING_DIR_AND_PYTHON_PATHS])&#10;if 'setup' in dir(django): django.setup()&#10;import django_manage_shell; django_manage_shell.run(PROJECT_ROOT)" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Python Script" />
+      </list>
+    </option>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -44,6 +61,7 @@
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="last_opened_file_path" value="$USER_HOME$/Projects/our-agency" />
     <property name="settings.editor.selected.configurable" value="terminal" />
   </component>
   <component name="RunManager">
@@ -77,17 +95,7 @@
       <list>
         <serviceView>
           <treeState>
-            <expand>
-              <path>
-                <item name="services root" type="e789fda9:ObjectUtils$Sentinel" />
-                <item name="root:db" type="7427dc5b:ServiceModel$ServiceGroupNode" />
-              </path>
-              <path>
-                <item name="services root" type="e789fda9:ObjectUtils$Sentinel" />
-                <item name="root:db" type="7427dc5b:ServiceModel$ServiceGroupNode" />
-                <item name="com.intellij.database.console.session.MessageBusSession@30d811e8" type="9fbbdea:ServiceModel$ServiceNode" />
-              </path>
-            </expand>
+            <expand />
             <select />
           </treeState>
         </serviceView>
@@ -106,7 +114,9 @@
       <updated>1583367350156</updated>
       <workItem from="1583367377904" duration="1376000" />
       <workItem from="1583375669152" duration="631000" />
-      <workItem from="1583380536679" duration="173000" />
+      <workItem from="1583380536679" duration="241000" />
+      <workItem from="1583381470803" duration="2186000" />
+      <workItem from="1583383733098" duration="1895000" />
     </task>
     <servers />
   </component>
@@ -114,29 +124,37 @@
     <option name="version" value="1" />
   </component>
   <component name="WindowStateProjectService">
-    <state width="1877" height="295" key="GridCell.Tab.0.bottom" timestamp="1583380683169">
+    <state x="690" y="286" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1583381826728">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
-    <state width="1877" height="295" key="GridCell.Tab.0.bottom/1920.0.1920.1080/0.0.1920.1080@0.0.1920.1080" timestamp="1583380683169" />
-    <state width="1877" height="295" key="GridCell.Tab.0.center" timestamp="1583380683168">
+    <state x="690" y="286" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/1920.0.1920.1080/0.0.1920.1080@0.0.1920.1080" timestamp="1583381826728" />
+    <state x="740" y="294" key="FileChooserDialogImpl" timestamp="1583389672023">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
-    <state width="1877" height="295" key="GridCell.Tab.0.center/1920.0.1920.1080/0.0.1920.1080@0.0.1920.1080" timestamp="1583380683168" />
-    <state width="1877" height="295" key="GridCell.Tab.0.left" timestamp="1583380683168">
+    <state x="740" y="294" key="FileChooserDialogImpl/1920.0.1920.1080/0.0.1920.1080@0.0.1920.1080" timestamp="1583389672023" />
+    <state width="1877" height="295" key="GridCell.Tab.0.bottom" timestamp="1583390564584">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
-    <state width="1877" height="295" key="GridCell.Tab.0.left/1920.0.1920.1080/0.0.1920.1080@0.0.1920.1080" timestamp="1583380683168" />
-    <state width="1877" height="295" key="GridCell.Tab.0.right" timestamp="1583380683168">
+    <state width="1877" height="295" key="GridCell.Tab.0.bottom/1920.0.1920.1080/0.0.1920.1080@0.0.1920.1080" timestamp="1583390564584" />
+    <state width="1877" height="295" key="GridCell.Tab.0.center" timestamp="1583390564583">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
-    <state width="1877" height="295" key="GridCell.Tab.0.right/1920.0.1920.1080/0.0.1920.1080@0.0.1920.1080" timestamp="1583380683168" />
-    <state width="196" height="457" key="HiddenNamespacesPopup" timestamp="1583380618149">
+    <state width="1877" height="295" key="GridCell.Tab.0.center/1920.0.1920.1080/0.0.1920.1080@0.0.1920.1080" timestamp="1583390564583" />
+    <state width="1877" height="295" key="GridCell.Tab.0.left" timestamp="1583390564583">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
-    <state width="196" height="457" key="HiddenNamespacesPopup/1920.0.1920.1080/0.0.1920.1080@0.0.1920.1080" timestamp="1583380618149" />
-    <state x="656" y="363" key="com.intellij.ide.util.TipDialog" timestamp="1583380541812">
+    <state width="1877" height="295" key="GridCell.Tab.0.left/1920.0.1920.1080/0.0.1920.1080@0.0.1920.1080" timestamp="1583390564583" />
+    <state width="1877" height="295" key="GridCell.Tab.0.right" timestamp="1583390564584">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
-    <state x="656" y="363" key="com.intellij.ide.util.TipDialog/1920.0.1920.1080/0.0.1920.1080@0.0.1920.1080" timestamp="1583380541812" />
+    <state width="1877" height="295" key="GridCell.Tab.0.right/1920.0.1920.1080/0.0.1920.1080@0.0.1920.1080" timestamp="1583390564584" />
+    <state width="196" height="457" key="HiddenNamespacesPopup" timestamp="1583381651570">
+      <screen x="0" y="0" width="1920" height="1080" />
+    </state>
+    <state width="196" height="457" key="HiddenNamespacesPopup/1920.0.1920.1080/0.0.1920.1080@0.0.1920.1080" timestamp="1583381651570" />
+    <state x="656" y="363" key="com.intellij.ide.util.TipDialog" timestamp="1583383738229">
+      <screen x="0" y="0" width="1920" height="1080" />
+    </state>
+    <state x="656" y="363" key="com.intellij.ide.util.TipDialog/1920.0.1920.1080/0.0.1920.1080@0.0.1920.1080" timestamp="1583383738229" />
   </component>
 </project>

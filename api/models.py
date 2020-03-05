@@ -1,29 +1,34 @@
 from django.db import models
-
+from django.utils import timezone
 
 # Create your models here.
 
 
-class Categories(models.Model):
-    name = models.CharField(max_length=60)
-    desc = models.CharField(max_length=60)
+class Category(models.Model):
+    name = models.CharField(max_length=250, verbose_name='Название каталога')
+    desc = models.TextField(verbose_name='Описание каталога')
+    created_at = models.DateField(verbose_name='Дата создания', default=timezone.now)
+    updated_at = models.DateField(verbose_name='Дата создания', default=timezone.now)
 
     class Meta:
-        verbose_name = "Категории"
+        verbose_name = "Категория"
+        verbose_name_plural = 'Категории'
 
 
-class Themes(models.Model):
-    category_id = models.ManyToManyField(Categories)
+class Theme(models.Model):
+    category_id = models.ForeignKey(Category, on_delete=models.CASCADE)
     name = models.CharField(max_length=150)
     desc = models.TextField(max_length=350)
 
     class Meta:
-        verbose_name = "Темы"
+        verbose_name = "Тема"
+        verbose_name_plural = 'Темы'
 
 
-class Details(models.Model):
-    theme_id = models.ManyToManyField( Themes)
+class Detail(models.Model):
+    theme_id = models.ForeignKey(Theme, on_delete=models.CASCADE)
     detail = models.TextField(verbose_name='Описания темы (текст)')
 
     class Meta:
         verbose_name = "Описание темы"
+        verbose_name_plural = 'Описание темы'

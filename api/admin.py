@@ -3,6 +3,6 @@ from .models import *
 
 # Register your models here.
 
-admin.site.register(Categories)
-admin.site.register(Themes)
-admin.site.register(Details)
+admin.site.register(Category)
+admin.site.register(Theme)
+admin.site.register(Detail)
