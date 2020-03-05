@@ -17,6 +17,10 @@ class ApiCategoriesView(generics.ListCreateAPIView):
     queryset = Category.objects.all()
     serializer_class = CategoriesSerializer
 
+class ApiBlockView(generics.ListCreateAPIView):
+    queryset = CategoryBlock.objects.all()
+    serializer_class = CategoryBlockSerializer
+
 
 class ApiThemeView(generics.ListCreateAPIView):
     queryset = Theme.objects.all()

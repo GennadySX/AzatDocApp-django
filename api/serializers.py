@@ -11,12 +11,22 @@ class CategoriesSerializer(serializers.ModelSerializer):
         )
         model = Category
 
+class CategoryBlockSerializer(serializers.ModelSerializer):
+    class Meta:
+        fields = (
+            'id',
+            'category_id',
+            'name',
+        )
+        model = CategoryBlock
+
 
 class ThemeSerializer(serializers.ModelSerializer):
     class Meta:
         fields = (
             'id',
             'category_id',
+            'block_id',
             'name',
             'desc',
         )

@@ -14,9 +14,18 @@ class Category(models.Model):
         verbose_name = "Категория"
         verbose_name_plural = 'Категории'
 
+class CategoryBlock(models.Model):
+    category_id = models.ForeignKey(Category, on_delete=models.CASCADE)
+    name = models.CharField(max_length=150)
+
+    class Meta:
+        verbose_name = "Оглавление"
+        verbose_name_plural = 'Оглавление'
+
 
 class Theme(models.Model):
     category_id = models.ForeignKey(Category, on_delete=models.CASCADE)
+    block_id = models.ForeignKey(CategoryBlock, on_delete=models.CASCADE)
     name = models.CharField(max_length=150)
     desc = models.TextField(max_length=350)
 
